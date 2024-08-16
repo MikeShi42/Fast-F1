@@ -26,7 +26,9 @@ from fastf1.utils import (
 
 _logger = get_logger('api')
 
-base_url = 'https://livetiming.formula1.com'
+# CORS Proxy for Frontend Requests
+base_url = 'https://corsproxy.io/?https://livetiming.formula1.com'
+# base_url = 'https://livetiming.formula1.com'
 base_url_mirror = 'https://livetiming-mirror.fastf1.dev'
 
 headers: dict[str, str] = {
