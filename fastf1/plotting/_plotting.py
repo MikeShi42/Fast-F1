@@ -20,7 +20,8 @@ except ImportError:
                   "Plotting of timedelta values will be restricted!",
                   RuntimeWarning)
 
-from rapidfuzz import fuzz
+# from rapidfuzz import fuzz
+import fastf1.fuzz as fuzz 
 
 from fastf1.logger import get_logger
 from fastf1.plotting._constants import (
